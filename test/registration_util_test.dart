@@ -10,4 +10,7 @@ void main() {
             .validateRegistrationUserInput("", "123", "123"),
         false);
   });
+  // password less than two digits
+  // confirmed password not the same as password.
+  // valid user input
 }

@@ -7,10 +7,11 @@ class RegistrationUtil{
   static final instance = RegistrationUtil._();
 
   /// the input is not valid if...
-  /// ...the username/password is empty
-  /// ...the confirmed password is not the same as the real password
+  /// ...the username is empty
   /// ...the password contains less than 2 digits
-  bool validateRegistrationUserInput(String userName, String password, String confirmedPassword){
+  /// ...the confirmed password is not the same as the password
+
+  bool validateRegistrationUserInput(String username, String password, String confirmedPassword){
     return true;
   }
 }
