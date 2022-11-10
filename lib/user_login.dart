@@ -19,9 +19,9 @@ class UserLogin {
   }
 
   /*
-      The result is invalid if
-      ... has user logged before
-      ... userName is not valid
+      The result is valid if
+      ... has no user logged before
+      ... userName is valid
     */
   bool loggedIn(String userName) {
     if (_currentUserLoggedIn.isNotEmpty && _validateUserName(userName)) {
