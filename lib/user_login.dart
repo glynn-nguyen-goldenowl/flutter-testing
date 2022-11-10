@@ -6,7 +6,7 @@ class UserLogin {
 
   /*
       The userName is not valid if
-      ...userName length is in [5-8] letters
+      ...userName length is not in [5-8] letters
     */
   bool _validateUserName(String userName) {
     if (userName.length < 5) {
