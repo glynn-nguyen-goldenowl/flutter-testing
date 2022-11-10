@@ -2,13 +2,13 @@ class UserLogin {
   /*
       The current user logged in
    */
-  String currentUserLoggedIn = "";
+  String _currentUserLoggedIn = "";
 
   /*
       The userName is not valid if
       ...userName length is in [5-8] letters
     */
-  bool validateUserName(String userName) {
+  bool _validateUserName(String userName) {
     if (userName.length < 5) {
       return false;
     }
@@ -24,8 +24,8 @@ class UserLogin {
       ... userName is not valid
     */
   bool loggedIn(String userName) {
-    if (currentUserLoggedIn.isNotEmpty && validateUserName(userName)) {
-      currentUserLoggedIn = userName;
+    if (_currentUserLoggedIn.isNotEmpty && _validateUserName(userName)) {
+      _currentUserLoggedIn = userName;
       return true;
     }
     return false;
